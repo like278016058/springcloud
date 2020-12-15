@@ -1,0 +1,18 @@
+# Project exclude paths
+/cloud-api-commons/target/
+/cloud-consumer-consul-order80/target/
+/cloud-consumer-feign-hystrix-order80/target/
+/cloud-consumer-hystrix-dashboar9001/target/
+/cloud-consumer-openfeign-order80/target/
+/cloud-consumer-order80/target/
+/cloud-consumerzk-order80/target/
+/cloud-eureka-server7001/target/
+/cloud-eureka-server7002/target/
+/cloud-eureka-server7003/target/
+/cloud-eureka-server7004/target/
+/cloud-gateway-gateway9527/target/
+/cloud-provider-consul-payment8006/target/
+/cloud-provider-eureka-hystrix-payment8001/target/
+/cloud-provider-eureka-payment8001/target/
+/cloud-provider-eureka-payment8002/target/
+/cloud-provider-zookeeper-payment8004/target/
