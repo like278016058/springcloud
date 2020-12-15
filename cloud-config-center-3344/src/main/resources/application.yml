@@ -1,3 +1,4 @@
+
 #####################
 # 需要修改host文件 增加127.0.0.1  config-3344.com
 #####################
@@ -11,7 +12,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/like278016058/springcloud #github上仓库地址
+          uri: https://github.com/like278016058/springcloud-config.git #github上仓库地址
           search-paths:
             # 搜索目录
             - springcoud-config
@@ -22,7 +23,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://localhost:7004/eureka
 
 #3366 需要.
 # rabbitmq 相关配置,暴露bus刷新配置的断点
