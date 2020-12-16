@@ -23,4 +23,14 @@ public class OrderController {
     public CommonResult get(@PathVariable("id")Long id){
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
     }
+    /**
+     * P94用,sleuth+zipkin链路监控使用
+     *
+     * @return
+     */
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin() {
+        String result = restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin/", String.class);
+        return result;
+    }
 }

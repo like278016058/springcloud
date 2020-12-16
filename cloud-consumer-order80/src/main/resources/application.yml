@@ -12,3 +12,9 @@ eureka:
 spring:
   application:
     name: cloud-consumer-order
+    #P94 需要的配置
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1  #采样率值介于0-1之间,1标识全部采集

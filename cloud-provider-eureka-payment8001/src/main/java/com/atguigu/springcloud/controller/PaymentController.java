@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 public class PaymentController {
@@ -56,4 +57,30 @@ public class PaymentController {
         }
         return this.discoveryClient;
     }
+    /**
+     * feign超时测试
+     *
+     * @return
+     */
+    @GetMapping("/payment/feign/timeout")
+    public String paymentFeignTimeOut() {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
+    }
+
+    /**
+     * P94用,sleuth+zipkin链路监控使用
+     *
+     * @return
+     */
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "hi,I am payment_zipkin server fall back, welcome to";
+    }
+
+
 }

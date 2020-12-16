@@ -12,13 +12,13 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
-      <!--  &lt;!&ndash;包含了sleuth+zipkin;sleuth链路监控展现,P94所需依赖&ndash;&gt;
+      <!--  &lt;!&ndash;包含了sleuth+zipkin;sleuth链路监控展现,P94所需依赖&ndash;&gt;-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
 
-        &lt;!&ndash;   引入eureka客户端     &ndash;&gt;-->
+      <!--&lt;!&ndash;   引入eureka客户端     &ndash;&gt;-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
